@@ -3,9 +3,10 @@ import './Avatar.css';
 
 //Create an Avatar component which takes an image URL and presents that image with a border.
 
-const Avatar = () => {
+const Avatar = (props) => {
+  console.log(props)
   return (
-    <img src="https://wordsmith.org/words/images/avatar2_large.png" alt="avatar" className='round-corners'/>
+    <img src={props.data} alt="avatar" className='round-corners'/>
   );
 };
 
