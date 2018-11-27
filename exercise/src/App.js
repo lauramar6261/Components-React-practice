@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Avatar data ={url}/>
-        <Badge data="8"/>
+        <Badge data="53"/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

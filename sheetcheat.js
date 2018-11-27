@@ -68,3 +68,9 @@ class App extends Component {
 }
 
 export default App;
+
+//Data
+// sending data
+<Avatar data = {URL}/>
+//receiving data
+{props.data}
