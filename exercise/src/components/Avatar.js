@@ -5,8 +5,9 @@ import './Avatar.css';
 
 const Avatar = (props) => {
   console.log(props)
+  const size = props.size
   return (
-    <img src={props.data} alt="avatar" className='round-corners'/>
+    <img src={props.data} alt="avatar" className={"round-corners" + " " + size}/>
   );
 };
 

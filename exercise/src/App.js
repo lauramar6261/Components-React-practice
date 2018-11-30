@@ -3,8 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Avatar from './components/Avatar';
 import Badge from './components/Badge';
+import UserCard from './components/UserCard';
 
 
+// let name = props.name
+// let image = props.image
+// let rank = props.rank
+// let score = props.score
 
 class App extends Component {
   render() {
@@ -13,20 +18,7 @@ class App extends Component {
       <div className="App">
         <Avatar data ={url}/>
         <Badge data="53"/>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <UserCard name="Laura" image={url} rank="Super Moderator" score="53" />
       </div>
     );
   }
